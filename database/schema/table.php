@@ -25,4 +25,16 @@ class Table extends \Laravel\Database\Schema\Table {
 	{
 		return $this->column(__FUNCTION__, compact('name'));
 	}
+
+	/**
+	 * Create date-time columns for creation and update timestamps.
+	 *
+	 * @return void
+	 */
+	public function timestamps()
+	{
+		$this->datetime('created_at');
+
+		$this->datetime('updated_at');
+	}
 }
