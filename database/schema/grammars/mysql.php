@@ -1,4 +1,4 @@
-<?php namespace BetterDates\Database\Schema\Grammars;
+<?php namespace SchemaEnhanced\Database\Schema\Grammars;
 
 class MySQL extends \Laravel\Database\Schema\Grammars\MySQL {
 

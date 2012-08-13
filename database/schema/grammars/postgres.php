@@ -1,4 +1,4 @@
-<?php namespace BetterDates\Database\Schema\Grammars;
+<?php namespace SchemaEnhanced\Database\Schema\Grammars;
 
 class PostgreSQL extends \Laravel\Database\Schema\Grammars\PostgreSQL {
 

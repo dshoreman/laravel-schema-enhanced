@@ -1,4 +1,4 @@
-<?php namespace BetterDates\Database;
+<?php namespace SchemaEnhanced\Database;
 
 use \Laravel\Database;
 

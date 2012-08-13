@@ -1,4 +1,4 @@
-<?php namespace BetterDates\Database\Schema;
+<?php namespace SchemaEnhanced\Database\Schema;
 
 class Table extends \Laravel\Database\Schema\Table {
 
