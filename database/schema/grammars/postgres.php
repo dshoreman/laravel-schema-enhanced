@@ -34,4 +34,15 @@ class PostgreSQL extends \Laravel\Database\Schema\Grammars\PostgreSQL {
 	{
 		return 'TIMESTAMP(0) WITHOUT TIME ZONE';
 	}
+
+	/**
+	 * Generate the data-type definition for an enum.
+	 *
+	 * @param  Fluent   $column
+	 * @return string
+	 */
+	protected function type_enum(\Laravel\Fluent $column)
+	{
+		return 'ENUM(\''.implode("','",$column->options).'\')';
+	}
 }

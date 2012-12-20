@@ -34,4 +34,15 @@ class MySQL extends \Laravel\Database\Schema\Grammars\MySQL {
 	{
 		return 'DATETIME';
 	}
+
+	/**
+	 * Generate the data-type definition for an enum.
+	 *
+	 * @param  Fluent   $column
+	 * @return string
+	 */
+	protected function type_enum(\Laravel\Fluent $column)
+	{
+		return 'ENUM(\''.implode("','",$column->options).'\')';
+	}
 }
