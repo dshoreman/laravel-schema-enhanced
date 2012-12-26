@@ -37,4 +37,19 @@ class Table extends \Laravel\Database\Schema\Table {
 
 		$this->datetime('updated_at');
 	}
+
+    /**
+     * Create enum field, give up the name and the options
+     * 
+     * @param mixed $name    Description.
+     * @param mixed $options Description.
+     *
+     * @access public
+     * @return mixed Value.
+     */
+	public function enum($name, $options)
+	{
+		return $this->column(__FUNCTION__, compact('name', 'options'));
+	}
+
 }
