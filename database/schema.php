@@ -45,7 +45,7 @@ class Schema extends \Laravel\Database\Schema {
 
 		return static::execute($table);
 	}
-	
+
 
 	/**
 	 * Create the appropriate schema grammar for the driver.
@@ -79,5 +79,5 @@ class Schema extends \Laravel\Database\Schema {
 
 		throw new \Exception("Schema operations not supported for [$driver].");
 	}
-	
+
 };

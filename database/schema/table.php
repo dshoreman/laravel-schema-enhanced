@@ -4,7 +4,7 @@ class Table extends \Laravel\Database\Schema\Table {
 
 	/**
 	 * Add a datetime column to the table
-	 * 
+	 *
 	 * @param  string 	$name
 	 * @param  array 	$options
 	 * @return Fluent
@@ -16,7 +16,7 @@ class Table extends \Laravel\Database\Schema\Table {
 
 	/**
 	 * Add a time column to the table
-	 * 
+	 *
 	 * @param  string 	$name
 	 * @param  array 	$options
 	 * @return Fluent
@@ -38,18 +38,17 @@ class Table extends \Laravel\Database\Schema\Table {
 		$this->datetime('updated_at');
 	}
 
-    /**
-     * Create enum field, give up the name and the options
-     * 
-     * @param mixed $name    Description.
-     * @param mixed $options Description.
-     *
-     * @access public
-     * @return mixed Value.
-     */
+	/**
+	 * Create enum field, give up the name and the options
+	 *
+	 * @param mixed $name    Description.
+	 * @param mixed $options Description.
+	 *
+	 * @access public
+	 * @return mixed Value.
+	 */
 	public function enum($name, $options)
 	{
 		return $this->column(__FUNCTION__, compact('name', 'options'));
 	}
-
 }
